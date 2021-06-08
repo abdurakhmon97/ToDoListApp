@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/allTasks"
+        android:title="All tasks"
+        android:icon="@drawable/tasks"/>
+
+    <item
+        android:id="@+id/inProgress"
+        android:title="In progress tasks"
+        android:icon="@drawable/inprogress"/>
+
+    <item
+        android:id="@+id/doneTasks"
+        android:title="Done"
+        android:icon="@drawable/ic_done"></item>
+
+</menu>

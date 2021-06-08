@@ -1,0 +1,70 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/todoCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:paddingStart="8dp"
+            android:buttonTint="@android:color/holo_green_dark"
+            tools:text="Go to the market and bring vegetables immediately today."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:paddingStart="8dp"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:text="Today`s date"
+            android:id="@+id/date"
+            android:layout_below="@id/todoCheckBox"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginTop="3dp"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:paddingStart="8dp"
+            android:text="Status" />
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:srcCompat="@drawable/deletei"
+            android:layout_below="@+id/status"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/updateIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:srcCompat="@drawable/edit"
+            android:layout_below="@+id/status"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/progressIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:srcCompat="@drawable/inprogress"
+            android:layout_below="@+id/status"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
